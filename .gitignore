@@ -1,0 +1,13 @@
+node_modules/
+reports/
+test-results/
+allure-results/
+allure-report/
+.env
+*.log
+.DS_Store
+dist/
+coverage/
+src/steps/generated/
+src/pages/generated/
+playwright-report/
