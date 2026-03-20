@@ -1,0 +1,31 @@
+{
+  "name": "playwright-cucumber-ai-framework",
+  "version": "1.0.0",
+  "description": "AI-powered Test Automation Framework with Playwright + Cucumber",
+  "scripts": {
+    "test": "cucumber-js",
+    "test:headed": "HEADED=true cucumber-js",
+    "test:tag": "cucumber-js --tags",
+    "report": "node src/support/reporter.js",
+    "test:ai": "cucumber-js --tags @ai",
+    "lint": "eslint src/ features/",
+    "clean": "rm -rf reports/ test-results/"
+  },
+  "dependencies": {
+    "@playwright/test": "^1.42.0",
+    "playwright": "^1.42.0",
+    "@cucumber/cucumber": "^10.3.1",
+    "@cucumber/html-formatter": "^21.3.1",
+    "@anthropic-ai/sdk": "^0.20.1",
+    "dotenv": "^16.4.5",
+    "axios": "^1.6.7",
+    "multiple-cucumber-html-reporter": "^3.5.0",
+    "winston": "^3.11.0",
+    "allure-cucumberjs": "^2.15.1",
+    "allure-playwright": "^2.15.1",
+    "expect": "^29.7.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.0"
+  }
+}
